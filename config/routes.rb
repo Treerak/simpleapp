@@ -54,7 +54,7 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-root 'poll#new'
+root 'users#new'
 get'/users/show/:id', to:'users#show', as: 'users_show'
 get'/users/new', to:'users#new', as: 'users_new'
 post'/users/create', to:'users#create', as: 'users_create'
